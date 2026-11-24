@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "AI Text Enhancer",
+  "version": "1.0.0",
+  "description": "Rewrite, summarize, expand, or improve any selected text with AI. Right-click to enhance.",
+  "permissions": ["contextMenus", "storage", "activeTab", "scripting", "notifications"],
+  "host_permissions": ["https://api.openai.com/*", "https://api.x.ai/*"],
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "options_page": "popup/options.html"
+}
