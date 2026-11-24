@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AI Text Enhancer Settings</title>
+  <style>
+    body { font-family: system-ui; max-width: 500px; margin: 40px auto; padding: 20px; }
+    label { display: block; margin: 12px 0 4px; font-weight: 500; }
+    input, select { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 6px; }
+    button { margin-top: 16px; padding: 10px 20px; background: #1a73e8; color: white; border: none; border-radius: 6px; cursor: pointer; }
+    .note { font-size: 12px; color: #666; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <h1>AI Text Enhancer Settings</h1>
+  <label>AI Provider</label>
+  <select id="provider">
+    <option value="openai">OpenAI (GPT-4o-mini)</option>
+    <option value="xai">xAI / Grok</option>
+  </select>
+  <label>API Key</label>
+  <input type="password" id="apiKey" placeholder="sk-... or xai-...">
+  <label>Model (optional)</label>
+  <input type="text" id="model" placeholder="gpt-4o-mini or grok-3">
+  <button id="save">Save</button>
+  <div class="note">Your API key stays in Chrome storage on this device only. Get keys from platform.openai.com or console.x.ai</div>
+  <script src="options.js"></script>
+</body>
+</html>
